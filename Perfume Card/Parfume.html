@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: hsl(30, 38%, 92%);
+        }
+        
+        .umumi {
+            width: 600px;
+            height: 450px;
+            margin: 200px auto;
+            border-radius: 10px;
+            display: flex;
+        }
+        
+        .picture {
+            width: 300px;
+            height: 450px;
+            float: left;
+        }
+        
+        .picture img {
+            width: 300px;
+            height: 450px;
+            border-radius: 10px 0 0 10px;
+        }
+        /*TEXT PART*/
+        
+        .text {
+            width: 300px;
+            height: 450px;
+            float: left;
+            background-color: #fff;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        #parfum {
+            color: #6C7289;
+            letter-spacing: 5px;
+            margin: 30px 0 0 30px;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        h1 {
+            margin: 30px 0 0 30px;
+            font-family: 'Fraunces', serif;
+        }
+        
+        #p {
+            margin: 30px 0 0 30px;
+            color: #6C7289;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+        }
+        
+        #greenprice {
+            margin: 30px 0 0 30px;
+            color: #3C8067;
+            font-weight: bold;
+            font-size: 37px;
+            float: left;
+            font-family: 'Fraunces', serif;
+        }
+        
+        #delprice {
+            margin: 25px 0 0 20px;
+            float: left;
+            color: #6C7289;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+        }
+        
+        .addtocart {
+            margin: 10px 25px 0 35px;
+            float: left;
+            width: 230px;
+            height: 50px;
+            background-color: #3C8067;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .addtocart i,
+        a {
+            color: #fff;
+            text-decoration: none;
+            margin: 15px 0 0 35px;
+        }
+        
+        .addtocart a {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        
+        .addtocart:hover {
+            background-color: #014B31;
+        }
+        
+        .price {
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer {
+            color: black;
+        }
+        
+        @media screen and (max-width:870px) {
+            .umumi {
+                display: flex;
+                flex-direction: column;
+                width: 412px;
+                height: 970px;
+            }
+            .picture {
+                width: 250px;
+                height: 250px;
+                border-radius: 0;
+            }
+            .text {
+                border-radius: 0 0 10px 10px
+            }
+            .footer {
+                margin: 0 0 20px 0;
+            }
+        }
+        
+        .footer a {
+            color: #a7a7a7;
+            transition: 0.5s;
+        }
+        
+        .footer {
+            text-align: center;
+            margin: 190px 0 0 20px;
+            padding: 10px;
+            color: #a7a7a7;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 17px;
+            background-color: #3C8067;
+            width: 300px;
+            border-radius: 20px;
+        }
+        
+        #coded,
+        #challenge {
+            margin: 5px 0 0 2px;
+        }
+        
+        .footer a:hover {
+            color: #fff;
+            transform: rotate();
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="umumi">
+
+
+        <div class="picture">
+            <img src="image/image-product-desktop.jpg" alt="">
+        </div>
+        <div class="text">
+            <p id="parfum">PERFUME</p>
+            <h1>Gabrielle <br> Essence Eau <br> De Parfum</h1>
+            <p id="p">A floral, solar and voluptous <br> interpretation composed by <br> Olivier Polge, Perfumer-Creator <br> for the House of CHANEL.</p>
+            <div class="price">
+                <h1 id="greenprice">$149.99</h1>
+                <del id="delprice">$169.99</del>
+            </div>
+            <div class="addtocart"><a href=""><i class="fa-solid fa-cart-shopping"></i>  Add to Cart</a></div>
+        </div>
+
+    </div>
+
+    <div class="footer">Challenge by <a href="https://www.frontendmentor.io/home" id="challenge" target="_blank">Frontend Mentor</a> Coded by <a href="https://github.com/Turqay-Tahirov" id="coded" target="_blank">Turqay</a></div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
